@@ -18,15 +18,22 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <li class="myclass-postauth nav-item d-none">
+            <button id="menu-home" class="btn btn-outline-primary me-2">Home</button>
+          </li>
+          <li class="myclass-postauth nav-item d-none">
+            <button id="menu-menu2" class="btn btn-outline-primary me-2">Menu2</button>
+          </li>
+          <li class="myclass-postauth nav-item d-none">
+            <button id = "menu-signout" class="btn btn-outline-danger me-2">signout</button>
           </li>
         </ul>
       </div>
     </div>
   </nav>
- 
-
+  
+  <!--Place holder for single page view-->
+  <div id ="root" class="m-2 p-2 bg-secondary bg-opacity-25"> Single page view </div>
     <!--Friebase core library script-->
     <script type ="module" src="./controller/firebase_core.js"></script>
     <!--My own custome code-->
