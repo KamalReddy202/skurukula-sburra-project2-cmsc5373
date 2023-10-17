@@ -1,11 +1,65 @@
-<h1> Computer Square</h1>
-<form>
-    <div class ="form-group">
-        <lable for = "number"> Enter a number</lable>
-        <input type="number" name="number" id="number"
-        required min="1" max="100" class="form-control"
-        placeholder="Enter a number 1 - 100">
+<div class="row">
+    <div class="col">
+        <h1>Where is the Firebase?</h1>
+        <div class="row">
+            <div class="col pd-0">
+                <div class="bg-success text-white pd-l-10" id="status-section"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col pd-0">
+                <div class="bg-info pd-l-10">Balance: <span id="balanceCounter"></span></div>
+            </div>
+            <div class="col pd-0">
+                <div class="bg-success text-white pd-l-10">Current Bets: <span id="cBets"></span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mr-top-30">SECRET: Firebase card location: <span id="cardLocation">1</span></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img id="image-0" src="/images/Card-Back.PNG" height="200" width="130">
+                <br>
+                <div>
+                    <form method="post" class="formUpdateBet" id="betCounterForm-0">
+                        <button type="submit" onclick="this.form.submitter='REDUCE'" id="btnCounterMinus-0" class="btn btn-outline-primary">-</button>
+                        <span id="betCounter-0">0</span>
+                        <button type="submit" onclick="this.form.submitter='INCREASE'" id="btnCounterPlus-0" class="btn btn-outline-danger">+</button>
+                    </form>
+                </div>
+                <div class="mr-top-30">
+                    <button id="playBtn" class="btn btn-outline-primary">Play</button>
+                </div>
+            </div>
+            <div class="col">
+                <img id="image-1" src="/images/Card-Back.PNG" height="200" width="130">
+                <br>
+                <div>
+                    <form method="post" class="formUpdateBet" id="betCounterForm-1">
+                        <button type="submit" onclick="this.form.submitter='REDUCE'" id="btnCounterMinus-1" class="btn btn-outline-primary">-</button>
+                        <span id="betCounter-1">0</span>
+                        <button type="submit" onclick="this.form.submitter='INCREASE'" id="btnCounterPlus-1" class="btn btn-outline-danger">+</button>
+                    </form>
+                </div>
+                <div class="mr-top-30">
+                    <button id="newGameBtn" class="btn btn-outline-danger">New Game</button>
+                </div>
+            </div>
+            <div class="col">
+                <img id="image-2" src="/images/Card-Back.PNG" height="200" width="130">
+                <br>
+                <div>
+                    <form method="post" class="formUpdateBet" id="betCounterForm-2">
+                        <button type="submit" onclick="this.form.submitter='REDUCE'" id="btnCounterMinus-2" class="btn btn-outline-primary">-</button>
+                        <span id="betCounter-2">0</span>
+                        <button type="submit" onclick="this.form.submitter='INCREASE'" id="btnCounterPlus-2" class="btn btn-outline-danger">+</button>
+                    </form>
+                </div>
+                <div class="mr-top-30">
+                    <button id="restartBtn" class="btn btn-outline-success">Restart App</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <button type="submit" class="btn btn-outline-primary">Submit</button>
-</form>
-<ul id ="dispaly" class="bg-success bg-opacity-25"></ul>
+</div>
